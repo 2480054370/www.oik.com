@@ -117,8 +117,9 @@ lt8 #wrapper input{
 
 
 
-.container{
-	/*padding-top: 260px;*/
+#wrapper .container{
+	width: 100%;
+	padding-top: 260px;
 }
 .container .big-box{
 	position: relative;
@@ -345,6 +346,10 @@ lt8 #wrapper input{
 	background-color: #fff;
 	margin-top: -50px;
 	z-index: 1;
+}
+.index-body .left{
+	width: 50%;
+	height: 
 }
 
 .footer .container{
