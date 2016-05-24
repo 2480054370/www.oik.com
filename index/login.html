@@ -1,0 +1,63 @@
+<html>
+<head>
+	<meta type="" charset="utf-8">
+	<title>登录</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="login_con">
+		<div class="container">
+			<div class="big-box">
+				<div class="box">
+					<div class="logo"><img src="images/logo.png"></div>
+					<div class="line"></div>
+					<form action="">
+						<input type="text" name="username" placeholder="用户名/邮箱地址/手机号码">
+						<input type="password" name="password" placeholder="密码">
+						<div class="status">
+							<a href="#">忘记密码</a>
+						</div><!--status end-->
+						<div class="status_b">
+							<a href="#">没有账号?去注册</a>
+						</div><!--status end-->
+						<button type="submit">登录</button>
+					</form>					
+				</div>	
+				<div class="mb"></div>
+			</div><!--big-box end-->		
+		</div><!--container end-->
+	</div><!--login_con end-->
+	<div class="register_con">
+		<div class="container">
+			<div class="big-box">
+				<div class="box">
+					<div class="logo"><img src="images/logo.png"></div>
+					<div class="line"></div>
+					<form action="">
+						<input type="text" name="username" placeholder="用户名/邮箱地址/手机号码">
+						<input type="password" name="password" placeholder="密码">
+						<input type="password" name="repeat_password" placeholder="确定密码">
+						<div class="status_c">
+							<a href="#">已有账号,去登录</a>
+						</div><!--status end-->
+						<button type="submit">注册</button>
+					</form>					
+				</div>	
+				<div class="mb"></div>
+			</div><!--big-box end-->		
+		</div><!--container end-->
+	</div><!--register_con end-->
+</body>
+<script type="text/javascript" src="js/jquery-2.2.3.js"></script>
+<script type="text/javascript">
+$('.register_con').hide();
+$('.status_b').click(function(){
+	$('.login_con').hide();
+	$('.register_con').show();
+});
+$('.status_c').click(function(){
+	$('.register_con').hide();
+	$('.login_con').show();
+});
+</script>
+</html>
