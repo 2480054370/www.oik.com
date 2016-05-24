@@ -1,0 +1,112 @@
+body{
+	font-family: "微软雅黑";
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
+}
+a{text-decoration: none;}
+.login_con{
+	width: 100%;
+	height: 1020px;	
+	background-image: url(../images/bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.register_con{
+	width: 100%;
+	height: 1020px;	
+	background-image: url(../images/bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.container{
+	padding-top: 260px;
+}
+.container .big-box{
+	position: relative;
+	width: 400px;
+	height: 555px;
+	margin: 0 auto;
+    box-shadow: 0 0 4px 1px #fff;
+}
+.container .box{
+	width: 340px;
+	height: 500px;
+	/*background: #ffeeee;*/
+	margin: 0 auto;
+	padding: 10px 30px 0;
+	position: relative;
+	z-index: 1;
+}
+.container .box .logo{
+	overflow: hidden;
+	width: 100px;
+	margin: 20px auto;
+}
+.container .box .logo img{
+	width: 100%;
+}
+.container .box .line{
+	height: 1px;
+	width: 100%;
+	background: #ddd;
+	box-shadow: 0 0 1px 1px #ddd;
+	margin: 60px 0 50px;
+}
+.container .box form{
+	text-align: center;
+	width: 295px;
+	margin: 0 auto;
+}
+.container .box input{
+    /*width: 78%;*/
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin: 8px auto;
+    text-indent: 8px;
+    font-family: "微软雅黑";
+}
+.container .box button{
+	width: 100%;
+    height: 35px;
+    background: #ee6955;
+    border-radius: 8px;
+    border: 0;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: "微软雅黑";
+}
+.container .box .status{
+	text-align: right;
+	margin: 16px 0 20px;
+}
+.container .box .status_b{
+	text-align: right;
+	margin: 0 0 50px;
+}
+.container .box .status_c{
+	text-align: right;
+	margin: 16px 0 50px;
+}
+.container .box .status a{
+	color: #fff;
+}
+.container .box .status_b a{
+	color: #fff;
+}
+.container .box .status_c a{
+	color: #fff;
+}
+.container .mb{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	opacity: 0.6;
+	top: 0;
+	left: 0;
+}

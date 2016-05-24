@@ -1,0 +1,252 @@
+body{
+	font-family: "微软雅黑";
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
+}
+a{text-decoration: none;}
+#register,#login {
+	position: absolute;
+
+}
+#register{	
+	z-index: 21;
+	opacity: 0;
+}
+#login{
+	z-index: 22;
+}
+/* login register */
+#container_demo{
+	 text-align: left;
+	 margin: 0;
+	 padding: 0;
+	 margin: 0 auto;
+}
+
+#wrapper{
+	right: 0px;
+	min-height: 560px;	
+	margin: 0px auto;	
+	/*width: 28.5%;*/
+	width: 400px;
+	position: relative;	
+}
+body{
+	width: 100%;
+	height: 1020px;	
+	background-image: url(../images/bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+a.hiddenanchor{
+	display: none;
+}
+
+
+/*ie*/
+lt8 #wrapper input{
+	padding: 10px 5px 10px 32px;
+    width: 92%;
+}
+.lt8 #wrapper input[type=checkbox]{
+	width: 10px;
+	padding: 0;
+}
+.lt8 #wrapper h1{
+	color: #066A75;
+}
+.lt8 #register{	
+	display: none;
+}
+
+#toregister:target ~ #wrapper #register,
+#tologin:target ~ #wrapper #login{
+	z-index: 22;
+	-webkit-animation-name: fadeInLeft;
+	-moz-animation-name: fadeInLeft;
+	-ms-animation-name: fadeInLeft;
+	-o-animation-name: fadeInLeft;
+	animation-name: fadeInLeft;
+	-webkit-animation-delay: .1s;
+	-moz-animation-delay: .1s;
+	-o-animation-delay: .1s;
+	-ms-animation-delay: .1s;
+	animation-delay: .1s;
+}
+#toregister:target ~ #wrapper #login,
+#tologin:target ~ #wrapper #register{
+	-webkit-animation-name: fadeOutLeft;
+	-moz-animation-name: fadeOutLeft;
+	-ms-animation-name: fadeOutLeft;
+	-o-animation-name: fadeOutLeft;
+	animation-name: fadeOutLeft;
+}
+
+/** the actual animation, credit where due : http://daneden.me/animate/ ***/
+.animate{
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-fill-mode: both;
+	
+	-moz-animation-duration: 0.5s;
+	-moz-animation-timing-function: ease;
+	-moz-animation-fill-mode: both;
+	
+	-o-animation-duration: 0.5s;
+	-o-animation-timing-function: ease;
+	-o-animation-fill-mode: both;
+	
+	-ms-animation-duration: 0.5s;
+	-ms-animation-timing-function: ease;
+	-ms-animation-fill-mode: both;
+	
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+	animation-fill-mode: both;
+}
+
+
+
+
+.container{
+	padding-top: 260px;
+}
+.container .big-box{
+	position: relative;
+	width: 400px;
+	height: 555px;
+	margin: 0 auto;
+    box-shadow: 0 0 4px 1px #fff;
+}
+.container .box{
+	width: 340px;
+	height: 500px;
+	/*background: #ffeeee;*/
+	margin: 0 auto;
+	padding: 10px 30px 0;
+	position: relative;
+	z-index: 1;
+}
+.container .box .logo{
+	overflow: hidden;
+	width: 100px;
+	margin: 20px auto;
+}
+.container .box .logo img{
+	width: 100%;
+}
+.container .box .line{
+	height: 1px;
+	width: 100%;
+	background: #ddd;
+	box-shadow: 0 0 1px 1px #ddd;
+	margin: 60px 0 50px;
+}
+.container .box form{
+	text-align: center;
+	width: 295px;
+	margin: 0 auto;
+}
+.container .box input{
+    /*width: 78%;*/
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    text-indent: 8px;
+    font-family: "微软雅黑";
+}
+.container .box input[type="button"],input[type=submit]{
+	width: 100%;
+    height: 35px;
+    background: #ee6955;
+    border-radius: 8px;
+    border: 0;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: "微软雅黑";
+}
+.container .box .status{
+	text-align: right;
+	margin: 16px 0 20px;
+}
+.container .box .status_b{
+	text-align: right;
+	margin: 0 0 50px;
+}
+.container .box .status_c{
+	text-align: right;
+	margin: 16px 0 50px;
+}
+.container .box .status a{
+	color: #fff;
+}
+.container .box .status_b a{
+	color: #fff;
+}
+.container .box .status_c a{
+	color: #fff;
+}
+.container .mb{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	opacity: 0.6;
+	top: 0;
+	left: 0;
+}
+
+/**material design**/
+.form-group {
+  position: relative;
+  font-size: 15px;
+  color: #BDBDBD;
+  background-color:#fff;
+      height: 35px;
+    border-radius: 5px;
+}
+.form-group + .form-group {
+  margin-top: 30px;
+}
+.form-group .form-label {
+	margin: 4px auto;
+  position: absolute;
+  z-index: 1;
+  left: 8px;
+  top: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.form-group .form-control {
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  height: 35px;
+  background: none;
+  border: none;
+  padding: 5px 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-bottom: 1px solid #777;
+}
+.form-group .form-control:invalid {
+  outline: none;
+}
+.form-group .form-control:focus, .form-group .form-control:valid {
+  outline: none;
+  color: #000;
+  box-shadow: 0 1px #FF4081;
+  border-color: #fff;
+}
+.form-group .form-control:focus + .form-label, .form-group .form-control:valid + .form-label {
+  font-size: 13px;
+  color:#ee6955;
+  -ms-transform: translateY(-15px);
+  -webkit-transform: translateY(-15px);
+  transform: translateY(-30px);
+}
+/**material design end**/
