@@ -31,18 +31,18 @@ class UserDAO extends BaseDAO {
 			$stmt->bindParam(':user_name', $user_name);
 			$stmt->execute();
 			$result = $stmt->fetch();
-		}else{
+			
+			if ($result["user_name"] != "") {
+				$user = new User();
+				$user->setUser_id($result["user_id"]);
+				$user->setUser_name($result["user_name"]);
+				return $user;
+			} else {
+				return new User();
+				}
+			}else{
 			header("Location:home.php");
 			}
-
-		if ($result["user_name"] != "") {
-			$user = new User();
-			$user->setUser_id($result["user_id"]);
-			$user->setUser_name($result["user_name"]);
-			return $user;
-		} else {
-			return new User();
-		}
 	}
 	
 	public function save($user_name,$user_password){
